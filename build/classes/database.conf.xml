@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database-conf>
+	<datasource>
+		<driver>com.mysql.jdbc.Driver</driver>
+		<url>jdbc:mysql://localhost:3306/ascentweb?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false</url>
+		<user>root</user>
+		<password>1234</password>
+	</datasource>
+</database-conf>
+<!--
+a. 转义序列各字符间不能有空格； 
+b. 转义序列必须以"；"结束； 
+c. 单独的&不被认为是转义开始； 
+d. 区分大小写。 
+
+以下是XML中需要的转义字符: 
+&(逻辑与)  &amp;        
+<(小于)    &lt;        
+>(大于)    &gt;        
+"(双引号)  &quot;      
+'(单引号)  &apos; 
+ -->

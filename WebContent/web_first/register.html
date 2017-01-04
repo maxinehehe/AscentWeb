@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>AscentSys医药商务系统</title>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8"  />
+	
+<!-- </head>-->
+	<script language="javascript" type="text/javascript">
+        function check(){
+            if (form.username.value==""){
+                    alert("用户名不能为空！");
+                    form.username.focus();
+                    return false;
+                }
+            if (form.password.value==""){
+                    alert("请输入密码！");
+                    form.password.focus();//输入焦点 到密码框
+                    return false;
+                }
+            if (form.password2.value==""){
+                    alert("请再次输入密码！");
+                    form.password2.focus();
+                    return false;
+                }
+            if (form.password.value != form.password2.value){
+                    alert("两次输入密码不一致！");
+                    form.password2.focus();
+                    return false;
+                }	
+            if (form.email.value==""){
+                    alert("请输入邮箱！");
+                    form.email.focus();
+                    return false;
+                }			
+            var regm = /^ [a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+ $/;//正则表达式验证
+            //^[a-zA-Z0-9_-]：开头必须为字母，下划线，数字。
+            if (form.email.value != "" && !form.email.value.match(regm)){
+                    alert("邮件格式不对，检查后重新输入！");
+                    form.email.focus();
+                    return false;
+                }
+        
+            }
+    </script>
+</head>
+
+<body>
+	<form name="form" method="post" action="registerHandler.jsp" />
+    	<table width="70%" class="mars" cellspacing="1" cellpadding="0" width="100%" border="0">
+        	<tbody>
+        		<tr>
+                	<td class="item" width="41%">
+                    	<div align="right">用户名：</div>
+                    </td>
+                    <td width="7%"></td>
+                    <td width="52%">
+                    	<input type="text" name="username" id="username" />
+                       <!-- &nbsp;&nbsp;-->
+                        <font color="red">*</font>
+                        <div id="usernameCheckDiv" class="warning">
+                        </div>
+                     </td>
+                <tr>
+                
+                <tr>
+                	<td class="item">
+                    	<div align="right">密码：</div>
+                    </td>
+                    <td width="7%"></td>
+                    <td>
+                    	<input type="password" name="password" id="password" />
+                       <!-- &nbsp;&nbsp;-->
+                        <font color="red">*</font>
+                    </td>
+                </tr>
+                
+                <tr>
+                	<td class="item">
+                    	<div align="right">密码确认：</div>
+                    </td>
+                    <td width="7%"></td>
+                    <td>
+                    	<input type="password" name="password2" id="password2" />
+                       <!-- &nbsp;&nbsp;-->
+                        <font color="red">*</font>
+                    </td>
+                </tr>
+                
+                <tr>
+                	<td class="item">
+						<div align="right">公司名称：</div>
+                    </td>	
+                    <td width="7%"></td>
+                    <td>
+                    	<input type="text" name="companyname" id="companyname" />
+                    </td>
+                </tr>
+            		
+                <tr>
+                	<td class="item">
+                    	<div align="right">公司地址：</div>
+                    </td>
+                    <td width="7%"></td>
+                    <td>
+                    	<input type="text" name="companyaddress" id="companyaddress" />
+                    </td>
+                </tr>
+                
+                <tr>
+                	<td>
+                    	<div align="right">国家：</div>
+                    </td>
+                    <td width="7%"></td>
+                    <td>
+                    	<input type="text" name="country" id="country" />
+                    </td>
+                </tr>
+                <tr>
+                	<td>
+                    	<div align="right">城市：</div>
+                    </td>
+                    <td width="7%"></td>
+                    <td>
+                    	<input type="text" name="city" id="city"  />
+                    </td>
+                </tr>
+                <tr>
+                	<td>
+                    	<div align="right">工作：</div>
+                    </td>
+                    <td width="7%"></td>
+                    <td>
+                    	<input type="text" name="job" id="job"  />
+                    </td>
+                </tr>
+                <tr>
+                	<td class="item">
+                    	<div align="right">电话：</div>
+                    </td>
+                    <td width="7%"></td>
+                    <td>
+                    	<input type="text" name="tel" id="tel"  />
+                    </td>
+                </tr>
+                <tr>
+                	<td class="item">
+                    	<div align="right">Zip：</div>
+                    </td>
+                    <td width="7%"></td>
+                    <td>
+                    	<input type="text" name="zip" id="zip"  />
+                    </td>
+                </tr>
+                <tr>
+                	<td class="item">
+                    	<div align="right">Email：</div>
+                    </td>
+                    <td width="7%"></td>
+                    <td>
+                    	<input type="text" name="email" id="email" />
+                        <font color="red">*</font>
+                    </td>
+                </tr>
+                <tr>
+                	<td colspan="3" align="center">
+                    	<input type="submit" value="注册" onclick="return check();"  />
+                        <input type="reset" value="取消" />	
+                    </td>
+                </tr>
+            <!--</tbody>-->
+            </tbody>
+        </table>
+        
+    </form>
+</body>
+</html>
