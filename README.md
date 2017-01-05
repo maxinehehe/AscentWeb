@@ -1,5 +1,5 @@
 # JavaWeb项目·亚思晟医药商务系统
-** javabean+jsp+servlet **
+**javabean+jsp+servlet**
 
 
 -----------------------------------------------------------
@@ -15,7 +15,7 @@
 	-  java环境
 
 ### 模块图
-![项目模块图][1]
+![](WebContent/contImages/图片1.png)
 
 ### 部分模块
     - 登录模块：
@@ -36,7 +36,8 @@
 
 ## 使用
 	注意： 首先你需要对tomcat 进行配置 
-*找到你的tomcat文件夹下conf文件夹下的context.xml  在 Context标签内 添加如下内容： *
+*找到你的tomcat文件夹下conf文件夹下的context.xml  在 Context标签内 添加如下内容：*
+
 ```xml
 <Resource
 	name="jdbc/mysql"
@@ -48,16 +49,17 @@
 	username="root"
 	url="jdbc:mysql://localhost:3306/ascentweb?useUnicode&amp;characterEncoding=UTF-8"
 	maxActive="20"></Resource>
-	```				
-	* 数据库相关配置改成你自己的 password、username、url【数据库名称】*
+```	
+
+*数据库相关配置改成你自己的 password、username、url【数据库名称】*
 
 ### 在eclipse上打开
 
-** 1. git clone https://github.com/maxinehehe/AscentWeb.git  **
-** 2. 打开克隆的文件，找到AscentWebDataBase，在你的数据库中运行: source 路径名/ascentweb_mysql.sql  **
-**     trig.sql 为触发器语句 运行方法同上 **
-** 3.使用eclipse导入即可 **
-** 4.将项目部署到tomcat上 **
+**1. git clone https://github.com/maxinehehe/AscentWeb.git** <br />
+**2. 打开克隆的文件，找到AscentWebDataBase，在你的数据库中运行: source 路径名/ascentweb_mysql.sql** <br />
+   **trig.sql 为触发器语句 运行方法同上** <br />
+**3.使用eclipse导入即可** <br />
+**4.将项目部署到tomcat上** <br />
 
 
 ----------
@@ -70,29 +72,37 @@
  <role rolename="manager-gui"/>
     <role rolename="admin-gui"/>
     <user username="admin" password="123456" roles="manager-gui,admin-gui"/>
-	```
-** A. windows打开运行\bin  找到start.dat双击即可运行  Linux下./start.sh运行 **
-** B. 将war项目部署到tomcat上，重启tomcat，输入网址即可。**
+```
+**A. windows打开运行\bin  找到start.dat双击即可运行  Linux下./start.sh运行** <br />
+**B. 将war项目部署到tomcat上，重启tomcat，输入网址即可。** <br />
 
 # 项目部分截图
-![电子商务页面][2]
+## 电子商务页面
+![](WebContent/contImages/图片2.png)
 
-![注册页面][3]
+## 注册页面
+![](WebContent/contImages/图片3.png)
 
-![注册成功页面][4]
+## 注册成功页面
+![](WebContent/contImages/图片4.png)
 
-![登录失败页面][5]
+## 登录失败页面
+![](WebContent/contImages/图片5.png)
 
-![商品浏览页面][6]
+## 商品浏览页面
+![](WebContent/contImages/图片6.png)
 
-![邮件接收][7]
+## 邮件接收
+![](WebContent/contImages/图片7.png)
 
-![管理员浏览商品][8]
+## 管理员浏览商品
+![](WebContent/contImages/图片8.png)
 
-![管理员浏览用户][9]
+## 管理员浏览用户
+![](WebContent/contImages/图片9.png)
 
 
-  [1]: ./images/%E5%9B%BE%E7%89%871.png "图片1.png"
+  
   [2]: ./images/%E5%9B%BE%E7%89%872.png "图片2.png"
   [3]: ./images/%E5%9B%BE%E7%89%873.png "图片3.png"
   [4]: ./images/%E5%9B%BE%E7%89%874.png "图片4.png"
